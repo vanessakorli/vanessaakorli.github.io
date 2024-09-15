@@ -1,0 +1,44 @@
+body{
+    background-color: #e8dbd5;
+    font-family: serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header  header"
+    "cont-nav home-main"
+    "footer footer";
+    grid-template-columns: 1fr 4fr;
+}
+
+header{
+    grid-area: header;
+    justify-self: stretch;
+    background-color: #dabcb2;
+    font-size: 40px;
+    font-style: normal;
+}
+
+#cont-nav{
+    grid-area: cont-nav;
+    background-color: #dabcb2;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#home-main{
+    grid-area: home-main;
+    justify-self: center;
+}
+
+
+footer{
+    grid-area: footer;
+    justify-self: center;
+}
